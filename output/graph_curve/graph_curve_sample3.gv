@@ -1,0 +1,33 @@
+digraph graph_curve_sample3 {
+	graph [layout=dot overlap=false rankdir=LR ratio=fill splines=true]
+	edge [color=blue dir=none weight=2]
+	subgraph head {
+		graph [layout=dot rank=source rankdir=LR]
+		1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\I.png" shape=box width=0]
+	}
+	C1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\C.png" shape=box width=0]
+	1:e -> C1:nw [color=blue]
+	S1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\S.png" shape=box width=0]
+	H1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\H.png" shape=box width=0]
+	S1:ne -> H1:w [color=blue]
+	H1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\H.png" shape=box width=0]
+	T1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\T.png" shape=box width=0]
+	H1:e -> T1:nw [color=blue]
+	C1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\C.png" shape=box width=0]
+	T1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\T.png" shape=box width=0]
+	C1:e -> T1:w [color=black]
+	T1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\T.png" shape=box width=0]
+	H2 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\H.png" shape=box width=0]
+	T1:ne -> H2:w [color=blue]
+	C1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\C.png" shape=box width=0]
+	S1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\S.png" shape=box width=0]
+	C1:ne -> S1:w [color=blue]
+	S1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\S.png" shape=box width=0]
+	N1 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\N.png" shape=box width=0]
+	S1:se -> N1:w [color=blue]
+	subgraph tail {
+		graph [layout=dot rank=sink rankdir=LR]
+		2 [label="" color=white height=0 image="C:\Users\57725\Desktop\work\component\O.png" shape=box width=0]
+	}
+	H2:e -> 2:w
+}
